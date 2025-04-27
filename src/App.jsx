@@ -8,7 +8,7 @@ function App() {
   const [qoutes,setQoutes]=useState([])
  
   const getJokes=async()=>{
-    const response= await axios.get("http://localhost:3000/jokes")
+    const response= await axios.get("https://jokes-app-bwa2.onrender.com/jokes")
     const jokes=await response.data
     setQoutes(jokes.jokes)
     
